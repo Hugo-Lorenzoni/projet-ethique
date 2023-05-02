@@ -1,0 +1,81 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+  <main class="wrapper">
+    <h1 class="title">Notre équipe</h1>
+    <section>
+      <img src="Deghorain_Rodrigue.jpg" alt="Rodrigue Deghorain" />
+      <div>
+        <h2>Rodrigue Deghorain</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad in fugiat
+          nostrum pariatur error, ipsum obcaecati? Nulla numquam, placeat
+          distinctio modi, enim quae dolores assumenda excepturi quasi
+          dignissimos sapiente rem.
+        </p>
+      </div>
+    </section>
+    <section>
+      <div>
+        <h2 class="right">Remy Lempire</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad in fugiat
+          nostrum pariatur error, ipsum obcaecati? Nulla numquam, placeat
+          distinctio modi, enim quae dolores assumenda excepturi quasi
+          dignissimos sapiente rem.
+        </p>
+      </div>
+      <img src="Lempire_Rémy.jpg" alt="Remy Lempire" />
+    </section>
+    <section>
+      <img src="Nguyen_Harrison.jpg" alt="Harrison Nguyen" />
+      <div>
+        <h2>Harrison Nguyen</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad in fugiat
+          nostrum pariatur error, ipsum obcaecati? Nulla numquam, placeat
+          distinctio modi, enim quae dolores assumenda excepturi quasi
+          dignissimos sapiente rem.
+        </p>
+      </div>
+    </section>
+    <section>
+      <div>
+        <h2 class="right">Hugo Lorenzoni</h2>
+        <p>Hugo est un étudiant</p>
+      </div>
+      <img src="Lorenzoni_Hugo.jpg" alt="Hugo Lorenzoni" />
+    </section>
+  </main>
+</Layout>
+
+<style>
+  img {
+    width: min(15rem, 40%);
+    height: max-content;
+    border-radius: 1rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border: 2px solid rgb(var(--accent));
+    transition: all 0.5s ease-in-out;
+    @media (max-width: 600px) {
+      width: 100%;
+    }
+  }
+  img:hover {
+    transform: translateY(-0.5rem);
+  }
+  section {
+    display: flex;
+    padding-block: 2rem;
+    gap: 2rem;
+    @media (max-width: 600px) {
+      flex-wrap: wrap;
+      gap: 0rem;
+    }
+  }
+  .right {
+    text-align: right;
+  }
+</style>

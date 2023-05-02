@@ -1,0 +1,141 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+  <main>
+    <h1 class="title">Notre enquête</h1>
+    <article>
+      <p>
+        Lors de notre enquête, nous avons interrogé une centaine de personnes
+        pour recueillir leur avis sur l'IA dans l'art. Voici ce qui en ressort :
+      </p>
+      <p>
+        Nous avons réussi à avoir un échantillon de personne assez équitable au
+        niveau du sexe. Au niveau de l'âge, nous avons touché toutes les
+        tranches d'âge mais avec une moitié de celle-ci (53,8%) situé entre 19
+        et 25 ans. Nous avons une situation similaire pour le niveau d'études et
+        le secteur d'activité, nous avons tous les niveaux représentés mais avec
+        une moitié possédant un bachelier, et une grande variété de secteur
+        d'activité mais avec une part non-négligeable provenant de l'Ingénierie
+        et de l'Informatique. On peut expliquer cela par notre entourage
+        rapproché qui est constitué d'étudiant en Polytech.
+      </p>
+      <img class="graph" src="graph1.png" alt="graphique secteur d'activité" />
+      <p>
+        Quant à la connaissance des personnes que nous avons interrogées sur les
+        domaines de l'IA et de l'art, on voit que des tendances se dessinent en
+        fonction du domaine.
+      </p>
+      <p>
+        Pour la familiarité avec l'art, on voit qu'une majorité des personnes
+        interrogés se sentent moyennement familier avec l'art et une minorité se
+        situe aux extrêmes (faiblement et fortement familier).
+      </p>
+      <p>
+        Pour la familiarité avec l'IA, là, la majorité des personnes n'est plus
+        au centre mais légèrement décalé vers faiblement familier. Et toujours
+        une minorité aux extrêmes.
+      </p>
+
+      <p>
+        Pour la familiarité avec l'usage de l'intelligence artificielle dans
+        l'art, la tendance est très claire. La majorité des personnes
+        interrogées sont très faiblement familier avec l'IA dans l'art. La
+        courbe de tendance est décroissante vers l'extrême “fortement” familier.
+      </p>
+      <div class="group-graph">
+        <img class="graph" src="graph2.png" alt="" /><img
+          class="graph"
+          src="graph3.png"
+          alt=""
+        /><img class="graph" src="graph4.png" alt="" />
+      </div>
+      <p>---</p>
+      <p>
+        Nous avons ensuite demandé aux personnes de donner des valeurs qui leur
+        semblaient importantes à prendre en compte par rapport au sujet de notre
+        projet. Plusieurs valeurs sont clairement ressorties : la créativité
+        (cité par 78% des sondés), l'originalité, l'authenticité, la liberté
+        d'expression et la beauté. Ce sont les 5 valeurs qui sont le plus
+        ressorties, citées quasiment toutes par au moins 1 personne sur deux.
+      </p>
+      <p>
+        Les personnes se sont également prêtées à un petit jeu. Nous leur avons
+        exposées diverses situations où l'IA avait une influence de plus en plus
+        forte dans la création d'une œuvre et nous leur avons demandé dans
+        chaque situation s'ils trouvaient qu'il s'agissait d'une œuvre d'art ou
+        pas. Il s'est donc dessiné une tendance où l'on voyait que plus l'IA
+        intervenait dans la création de l'œuvre moins les personnes trouvaient
+        qu'il s'agissait d'une œuvre d'art.
+      </p>
+      <ul>
+        <li>
+          - Dans la première situation : “Une personne crée une œuvre et la
+          perfectionne avec une IA.”, <b>81,8%</b> des personnes qualifiaient la
+          création d'œuvre d'art.
+        </li>
+        <li>
+          - Dans la seconde situation : “Une personne crée le début de l'œuvre
+          et la complète avec une IA.”, <b>70,5%</b> des personnes la qualifiaient
+          d'œuvre d'art
+        </li>
+        <li>
+          - Dans la troisième situation : “Une personne soumet ses idées à une
+          IA qui génère une œuvre. La personne perfectionne ensuite le résultat
+          de l'IA.”, <b>64,4%</b> des sondés trouvaient qu'il s'agissait d'une œuvre
+          d'art.
+        </li>
+        <li>
+          - Dans la quatrième situation : “Une personne soumet ses idées à une
+          IA qui génère une œuvre.”, plus que <b>45,5%</b> des personnes interrogées
+          pensaient que la création était une œuvre d'art.
+        </li>
+        <li>
+          - Et dans la cinquième situation : “On demande à une IA de générer une
+          œuvre.”, dans cette dernière situation, il n'y avait plus que
+          <b>40,2%</b>
+          des personnes qui qualifiaient la création d'œuvre d'art.
+        </li>
+      </ul>
+      <p>
+        Nous sommes donc passé de 81,8% des sondées dans les situations où l'IA
+        avait le moins d'influence à 40,2% dans celle où l'IA générait
+        totalement l'œuvre. On peut en tirer que 20% des gens rejettent l'IA
+        dans l'art peu importe son niveau d'influence et que 40% des gens par
+        contre considèrent dans tous les cas qu'il s'agira d'une œuvre d'art.
+      </p>
+      <p>
+        Pensez-vous que l'utilisation de l'intelligence artificielle dans l'art
+        est bénéfique pour la société ? Il s'agit de la dernière question que
+        nous avons posée aux personnes interrogées. Nous voyons que les avis
+        sont divergents même si la tendance se dessine plus vers le fait que
+        l'IA ne serait pas ou peu bénéfique à l'art.
+      </p>
+      <img class="graph" src="graph5.png" alt="" />
+      <p>
+        Pour terminer, nous avons laissé aux personnes un espace d'expression où
+        ils ont pu développer un avis, remarque, … sur le sujet.
+      </p>
+    </article>
+  </main>
+</Layout>
+
+<style>
+  .graph {
+    width: min(38rem, 100%);
+    border-radius: 1rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    display: flex;
+    margin-inline: auto;
+    border: 2px solid rgb(var(--accent));
+  }
+  .group-graph {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  li {
+    margin-block: 1rem;
+  }
+</style>
