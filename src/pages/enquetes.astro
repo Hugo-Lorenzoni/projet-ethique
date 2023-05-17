@@ -118,6 +118,32 @@ import Layout from "../layouts/Layout.astro";
         ils ont pu développer un avis, remarque, … sur le sujet.
       </p>
     </article>
+    <h2>Les commentaires de nos participants</h2>
+    <section class="caroussel">
+      <div>
+        <p>
+          <q>
+            Si l'IA peut produire, à partir d'une même base, plusieurs œuvres
+            différentes, on peut penser que cette œuvre est contingente et qu'il
+            y a dès lors une forme de créativité. C'est donc de l'art.
+          </q>
+        </p>
+        <p>
+          <q>
+            L'art est avant tout un moyen très personnel de s'exprimer et
+            partager. L'IA n'a pas sa place dans ce processus qui doit avant
+            tout rester unique, intime, humain.
+          </q>
+        </p>
+        <p>
+          <q>
+            Je pense qu'il n'y a pas de réponses binaires à ces questions. Tout
+            dépend de l'intention, de l'originalité et du travail de la personne
+            derrière L'IA.
+          </q>
+        </p>
+      </div>
+    </section>
   </main>
 </Layout>
 
@@ -137,5 +163,47 @@ import Layout from "../layouts/Layout.astro";
   }
   li {
     margin-block: 1rem;
+  }
+
+  .caroussel {
+    background-color: rgb(var(--accent));
+    color: white;
+    font-size: x-large;
+    border-radius: 1.5rem;
+  }
+  .caroussel div {
+    width: 300%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    animation-duration: 20s;
+    animation-name: carouselAnimation;
+    animation-iteration-count: infinite;
+  }
+  .caroussel p {
+    padding: 10% max(10%, 1rem);
+  }
+  @keyframes carouselAnimation {
+    0% {
+      transform: translateX(0%);
+    }
+
+    20% {
+      transform: translateX(0%);
+    }
+    25% {
+      transform: translateX(calc(-100% / 3));
+    }
+    50% {
+      transform: translateX(calc(-100% / 3));
+    }
+    55% {
+      transform: translateX(calc(-100% * 2 / 3));
+    }
+    80% {
+      transform: translateX(calc(-100% * 2 / 3));
+    }
+    95% {
+      transform: translateX(0%);
+    }
   }
 </style>
