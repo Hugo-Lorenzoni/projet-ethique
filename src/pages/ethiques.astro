@@ -17,6 +17,7 @@ import Layout from "../layouts/Layout.astro";
         effectuer une action.
       </p>
       <h3>Application de l'éthique des vertus.</h3>
+      <img class="right" src="aristote.png" alt="aristote" />
       <p>
         Pour appliquer cette éthique à notre sujet, nous devons d'abord définir
         le contexte et l'acteur de l'action. Prenons le cas d'un artiste musical
@@ -122,6 +123,8 @@ import Layout from "../layouts/Layout.astro";
         l'adage : “La fin justifie les moyens”.
       </p>
       <h3>Application de l'éthique des conséquences :</h3>
+
+      <img class="left" src="beethoven.png" alt="beethoven" />
       <p>
         Le point de vue de l'éthique des conséquences est très intéressant à
         étudier pour notre question car si l'on regarde uniquement la
@@ -166,4 +169,22 @@ import Layout from "../layouts/Layout.astro";
   </main>
 </Layout>
 
-<style></style>
+<style>
+  img {
+    width: min(50%, 20rem);
+
+    border-radius: 1rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border: 2px solid rgb(var(--accent));
+  }
+  .right {
+    float: right;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+  }
+  .left {
+    float: left;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+  }
+</style>
