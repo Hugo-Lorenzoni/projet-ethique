@@ -233,10 +233,9 @@
 <script>
   const menu_ul = document.querySelector("ul#primary-navigation");
   const menu_btn = document.querySelector("button#primary-navigation");
-  const page = document.querySelector("body");
   // Gérer les clics sur chaque bouton.
 
-  page.addEventListener("click", (e) => {
+  window.addEventListener("click", (e) => {
     const visibility = menu_ul.getAttribute("data-visible");
     if (visibility === "false" && menu_btn.contains(e.target as Node)) {
       menu_ul.setAttribute("data-visible", "true");
