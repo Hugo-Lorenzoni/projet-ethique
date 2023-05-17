@@ -1,6 +1,5 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
 import HeroImage from "/hero-image.jpg";
 ---
 
@@ -10,58 +9,42 @@ import HeroImage from "/hero-image.jpg";
       <img src={HeroImage} alt="AI generated art" />
       <h1>
         Une œuvre générée partiellement ou totalement par
-        <span class="text-gradient"> l’intelligence artificielle</span>
+        <span class="text-gradient"> l'intelligence artificielle</span>
         peut-elle être considérée comme une
-        <span class="text-gradient"> œuvre d’art</span> ?
+        <span class="text-gradient">œuvre d'art</span> ?
       </h1>
     </section>
-    <h2 class="title">Introduction</h2>
-    <p class="instructions">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi odio,
-      id incidunt perferendis libero ex beatae culpa esse non ipsam
-      voluptatibus, atque ipsum dolorem eveniet qui. Numquam sed repudiandae
-      nobis provident odio ea officia ut facilis beatae neque sequi ex deleniti
-      enim unde, saepe earum ad voluptates mollitia voluptatum, architecto
-      tempora accusamus culpa? Dolores quaerat possimus sunt adipisci tempora
-      maiores, ducimus quas magni vel porro quibusdam dolorem recusandae minima
-      excepturi distinctio nemo at ipsum officiis esse explicabo ad. Reiciendis,
-      debitis vel vitae sapiente delectus dignissimos ipsum, amet at laboriosam
-      quis modi harum, temporibus facere? Vel cumque illum nihil exercitationem
-      suscipit mollitia repudiandae amet tempore dolorum accusamus repellendus
-      modi sit, iste, non libero adipisci optio. Tempore dignissimos numquam
-      explicabo, magnam dolores itaque dolorem tenetur facilis aliquid
-      consectetur repellat quod a exercitationem incidunt saepe eligendi porro
-      praesentium quibusdam beatae cum eaque! Aliquid maxime ipsum recusandae
-      optio, earum nulla sapiente aperiam voluptatem, debitis, culpa fuga.
-      Deserunt a cum iusto obcaecati recusandae quod voluptatum, consequatur
-      consequuntur dolore ipsa atque suscipit, esse repudiandae? Molestiae
-      aperiam impedit magni. Asperiores sed, exercitationem at ex ullam
-      laboriosam soluta sint accusamus aspernatur nostrum suscipit architecto
-      maxime fugit reiciendis saepe aliquam cum, provident, tempore nobis
-      quaerat neque dignissimos. Voluptates maiores dolorum aliquam asperiores
-      iste modi hic deleniti nisi, tempore explicabo incidunt laudantium,
-      consequuntur at ullam. Itaque temporibus harum, odio provident enim quasi
-      voluptate quibusdam mollitia culpa! Officia veniam architecto neque
-      reiciendis reprehenderit voluptas animi ipsa nulla nobis fuga soluta ad
-      quas, facilis est, quod qui id. Minima enim accusamus debitis, ratione qui
-      sunt exercitationem atque magnam explicabo culpa earum cupiditate, nihil
-      veritatis eos dolorem nostrum quaerat cum? Doloribus cupiditate dolorum
-      explicabo nesciunt dicta molestiae, voluptates voluptate excepturi
-      deserunt, quas sunt voluptatibus? Harum obcaecati adipisci, reiciendis
-      nostrum dolor pariatur laborum voluptatum voluptatem veritatis quis
-      quisquam. Ea impedit accusamus tempora numquam doloremque natus fugit fuga
-      tenetur quas totam. Est rerum ipsam, ducimus sunt quia pariatur eveniet
-      similique corrupti quod aliquam, beatae reprehenderit, reiciendis numquam
-      aperiam nihil! Laborum sed eveniet asperiores magni facere praesentium a
-      sit? Minima ea optio vero consequuntur ipsa magnam, aspernatur maiores
-      vitae voluptates ab tempora officiis similique amet voluptate obcaecati
-      quam inventore? Aspernatur officiis iste accusamus doloremque pariatur
-      mollitia recusandae quisquam illo iure sunt dolore, sed inventore,
-      deleniti nobis laborum molestiae voluptatum? Ipsum accusamus quas
-      voluptatum, corrupti nostrum incidunt labore dolorum provident asperiores
-      possimus deleniti doloremque dolorem perspiciatis totam numquam dolore
-      iusto fugiat tenetur maxime exercitationem deserunt? Odio, porro.
-    </p>
+    <div class="instructions">
+      <p>
+        An de grâce 2035. Suite au développement exponentiel et sans limite des
+        intelligences artificielles génératives destinées au grand public, le
+        marché de l'art s'est retrouvé complètement bouleversé par l'arrivée des
+        œuvres générées par IA. La performance technique et les émotions
+        véhiculées par l'humain ayant perdu leur sens, le public s'est peu à peu
+        désintéressé de l'art, lassé de voir le marché inondé chaque jour de
+        millions de nouvelles œuvres.
+      </p>
+      <p>
+        Graphistes, metteurs en scène, peintres, compositeurs et autres corps de
+        métier se sont ainsi retrouvés du jour au lendemain relégués au second
+        rang derrière des machines qui effectuent leur travail créatif en mieux,
+        pour moins cher et en un temps record.
+      </p>
+      <p>
+        Cet avenir, quelque peu romancé certes, est-il souhaitable ? Au fond,
+        qu'est-ce que l'art ? Et qu'est-ce qui fait d'une œuvre une “œuvre
+        d'art” ? Un artiste doit-il posséder une humanité ? Si une toile blanche
+        ou un tas de briques peuvent être considérées comme des œuvres d'art,
+        alors pourquoi un tableau généré par intelligence artificielle ne le
+        serait pas ?
+      </p>
+      <p>
+        Voilà les questions auxquelles nous allons tenter de répondre au travers
+        de notre sujet d'étude : "Une œuvre générée partiellement ou totalement
+        par l'intelligence artificielle peut-elle être considérée comme une
+        œuvre d'art ?"
+      </p>
+    </div>
   </main>
 </Layout>
 
@@ -132,7 +115,7 @@ import HeroImage from "/hero-image.jpg";
     margin: 1rem 0 0;
     border: 1px solid rgba(var(--accent), 25%);
     background-color: white;
-    padding: 1rem;
+    padding: 0 1rem;
     border-radius: 0.4rem;
   }
   .instructions code {
