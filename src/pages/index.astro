@@ -56,23 +56,21 @@ import HeroImage from "/hero-image.jpg";
     overflow: hidden;
   }
   section img {
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    width: 80%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   section h1 {
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: 0rem;
+    right: 0rem;
 
     font-size: 3rem;
     font-weight: 800;
     line-height: 3.5rem;
 
-    margin: 0;
+    margin: max(0.5rem, 1%) max(0.5rem, 2%);
     padding: 1.5rem 2rem;
 
     backdrop-filter: blur(5px);
@@ -81,7 +79,6 @@ import HeroImage from "/hero-image.jpg";
 
     border: 0.5rem solid;
     border-radius: 1rem;
-    width: 80%;
     max-width: 40rem;
 
     animation: 1s ease-out 0s 1 InFromRight;
@@ -90,15 +87,11 @@ import HeroImage from "/hero-image.jpg";
       font-size: 2.5rem;
       line-height: 3rem;
     }
-  }
-  @keyframes fadeInFromRight {
-    0% {
-      transform: translateX(100%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
+
+    @media (max-width: 650px) {
+      font-size: 1.5rem;
+      line-height: 2rem;
+      padding: 0.5rem 1rem;
     }
   }
 
