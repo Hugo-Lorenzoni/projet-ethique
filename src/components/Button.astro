@@ -1,0 +1,37 @@
+---
+export interface Props {
+  href: string;
+  title: string;
+}
+
+const { href, title } = Astro.props;
+---
+
+<section>
+  <a href={href} class="lol">
+    {title}
+    {">>"}
+  </a>
+</section>
+
+<style>
+  section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  a {
+    padding: 1rem 1.5rem;
+    border-radius: 2rem;
+    font-size: large;
+    font-weight: bold;
+    border: 0.25rem solid rgb(var(--blue-color));
+    background-color: rgb(var(--bg-color));
+    box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
+    transition: all 0.2s ease-in-out;
+  }
+  a:hover {
+    background-color: rgb(var(--blue-color));
+    color: rgb(var(--bg-color));
+  }
+</style>

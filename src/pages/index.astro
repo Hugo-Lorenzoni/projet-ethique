@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Button from "../components/Button.astro";
 import HeroImage from "/hero-image.jpg";
 ---
 
@@ -45,6 +46,10 @@ import HeroImage from "/hero-image.jpg";
         œuvre d'art ?"
       </p>
     </div>
+    <Button
+      href="/ethiques"
+      title="Vers l'analyse selon les différentes éthiques"
+    />
   </main>
 </Layout>
 
@@ -105,7 +110,7 @@ import HeroImage from "/hero-image.jpg";
   .instructions {
     line-height: 1.6;
     /* top | left and right | bottom */
-    margin: 1rem 0 0;
+    margin: 1rem 0;
     border: 1px solid rgba(var(--accent), 25%);
     background-color: white;
     padding: 0 1rem;
