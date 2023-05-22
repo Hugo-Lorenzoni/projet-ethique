@@ -1,10 +1,15 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Button from "../components/Button.astro";
 ---
 
 <Layout>
   <main class="wrapper">
     <h1 class="title">Notre équipe</h1>
+    <p>
+      Notre équipe est composée de 4 étudiants en BAB3 de l'option "Informatique
+      et gestion" de la Faculté Polytechnique de Mons.
+    </p>
     <section>
       <div>
         <img src="Deghorain_Rodrigue.jpg" alt="Rodrigue Deghorain" />
@@ -23,10 +28,15 @@ import Layout from "../layouts/Layout.astro";
         <h3>Hugo Lorenzoni</h3>
       </div>
     </section>
+    <Button href="/bibliographie" title="Vers la bibliographie" />
   </main>
 </Layout>
 
 <style>
+  p {
+    font-weight: bolder;
+    font-size: large;
+  }
   div {
     width: min(15rem, 40%);
     height: max-content;
@@ -50,7 +60,6 @@ import Layout from "../layouts/Layout.astro";
   }
   section {
     display: flex;
-    padding-block: 2rem;
     gap: 2rem;
     flex-wrap: wrap;
     justify-content: space-evenly;

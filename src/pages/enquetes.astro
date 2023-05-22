@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Button from "../components/Button.astro";
 ---
 
 <Layout>
@@ -149,6 +150,7 @@ import Layout from "../layouts/Layout.astro";
         </p>
       </div>
     </section>
+    <Button href="/experts" title="Vers le point de vue de notre expert" />
   </main>
 </Layout>
 
@@ -175,12 +177,13 @@ import Layout from "../layouts/Layout.astro";
     color: white;
     font-size: x-large;
     border-radius: 1.5rem;
+    margin-block: 1rem;
   }
   .caroussel div {
     width: 300%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    animation-duration: 20s;
+    animation-duration: 25s;
     animation-name: carouselAnimation;
     animation-iteration-count: infinite;
   }
