@@ -3,7 +3,115 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-  <main></main>
+  <main class="wrapper">
+    <h1 class="title">Bibliographie</h1>
+    <p>
+      AFP. (2017). Un album où collaborent Stromae et une intelligence
+      artificielle. <i>RTBF</i>. <a
+        href="https://www.rtbf.be/article/un-album-ou-collaborent-stromae-et-une-intelligence-artificielle-9777757"
+        >https://www.rtbf.be/article/un-album-ou-collaborent-stromae-et-une-intelligence-artificielle-9777757</a
+      >
+    </p>
+    <p>
+      Bensamoun, A. (2020). Ceci est… une œuvre d'art ! La question des
+      créations générées par une intelligence artificielle. <i>L'Observatoire</i
+      >, 55, 104-106. <a href="https://doi.org/10.3917/lobs.055.0104"
+        >https://doi.org/10.3917/lobs.055.0104</a
+      >
+    </p>
+    <p>
+      Heikkilä M. (2022). The Algorithm: AI-generated art raises tricky
+      questions about ethics, copyright, and security. <i
+        >MIT Technology review</i
+      >. <a
+        href="https://www.technologyreview.com/2022/09/20/1059792/the-algorithm-ai-generated-art-raises-tricky-questions-about-ethics-copyright-and-security/"
+        >https://www.technologyreview.com/2022/09/20/1059792/the-algorithm-ai-generated-art-raises-tricky-questions-about-ethics-copyright-and-security/</a
+      >
+    </p>
+    <p>
+      Jeulin, B. (2022). "Prompt art", intelligence artificielle et droit
+      d'auteur : guide pratique. <i>Village de la Justice</i>. <a
+        href="https://www.village-justice.com/articles/prompt-art-intelligence-artificielle-droit-auteur-guide-pratique,43649.html"
+        >https://www.village-justice.com/articles/prompt-art-intelligence-artificielle-droit-auteur-guide-pratique,43649.html</a
+      >
+    </p>
+    <p>
+      Mok, K. (2023). The Power and Ethical Dilemma of AI Image Generation
+      Models. <i>The New Stack</i>. <a
+        href="https://thenewstack.io/the-power-and-ethical-dilemma-of-ai-image-generation-models/"
+        >https://thenewstack.io/the-power-and-ethical-dilemma-of-ai-image-generation-models/</a
+      >
+    </p>
+    <p>
+      Nanou, E. (2023). The Ethical Pros and Cons of AI Art Generation. <i
+        >Make us of</i
+      >. <a
+        href="https://www.makeuseof.com/ai-art-generation-ethical-pros-cons/"
+        >https://www.makeuseof.com/ai-art-generation-ethical-pros-cons/</a
+      >
+    </p>
+    <p>
+      Péloquin, T. (2022). L'art de copier sans payer. <i>La presse</i>. <a
+        href="https://www.lapresse.ca/actualites/2022-10-10/intelligence-artificielle/l-art-de-copier-sans-payer.php"
+        >https://www.lapresse.ca/actualites/2022-10-10/intelligence-artificielle/l-art-de-copier-sans-payer.php</a
+      >
+    </p>
+    <p>
+      Plunkett, L. (2022). AI Creating 'Art' Is An Ethical And Copyright
+      Nightmare. <i>Kotaku</i>. <a
+        href="https://kotaku.com/ai-art-dall-e-midjourney-stable-diffusion-copyright-1849388060"
+        >https://kotaku.com/ai-art-dall-e-midjourney-stable-diffusion-copyright-1849388060</a
+      >
+    </p>
+    <p>
+      (2022). ChatGPT. <i>OpenAI</i>. <a
+        href="https://openai.com/product/chatgpt"
+        >https://openai.com/product/chatgpt</a
+      >
+    </p>
+    <p>
+      (2022). Craiyon. <i>Craiyon LLC</i>. <a href="https://www.craiyon.com/"
+        >https://www.craiyon.com/</a
+      >
+    </p>
+    <p>
+      (2021). DALL-E. <i>OpenAI</i>. <a
+        href="https://openai.com/product/dall-e-2"
+        >https://openai.com/product/dall-e-2</a
+      >
+    </p>
+    <p>
+      (2020). Quand les arts détournent l'intelligence artificielle. <i
+        >Multitudes</i
+      >, 78, 116-124. <a href="https://doi.org/10.3917/mult.078.0116"
+        >https://doi.org/10.3917/mult.078.0116</a
+      >
+    </p>
+    <p>
+      (2022). Midjourney. <a
+        href="https://www.midjourney.com/home/?callbackUrl=%2Fapp%2F"
+        >https://www.midjourney.com/home/?callbackUrl=%2Fapp%2F</a
+      >
+    </p>
+    <p>
+      (2020) The Next Rembrandt. <a href="https://www.nextrembrandt.com/"
+        >https://www.nextrembrandt.com/</a
+      >
+    </p>
+  </main>
 </Layout>
 
-<style></style>
+<style>
+  p {
+    text-indent: 0;
+    line-height: 1.25rem;
+    text-align: start;
+  }
+  p:before {
+    content: "-";
+  }
+  a {
+    color: rgb(var(--accent));
+    text-decoration: underline;
+  }
+</style>
