@@ -58,11 +58,13 @@ import Footer from "../components/Footer.astro";
 
   body {
     margin: 0 auto;
+    padding-top: ;
   }
 
   header {
-    position: sticky;
+    position: fixed;
     top: 0;
+    width: 100%;
   }
 
   a {
@@ -106,3 +108,8 @@ import Footer from "../components/Footer.astro";
     transform: translate(1ch);
   }
 </style>
+
+<script>
+  const header_height = document.querySelector("header").clientHeight;
+  document.querySelector("main").style.paddingTop = header_height + "px";
+</script>
