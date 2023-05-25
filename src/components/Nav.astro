@@ -219,6 +219,7 @@
       overflow-x: hidden;
     }
     .primary-navigation {
+      font-size: 1.2rem;
       position: fixed;
       inset: 0 0 0 30%;
       background-color: rgba(var(--bg-color), 0.95);
@@ -243,6 +244,13 @@
     }
     button {
       display: block;
+    }
+    .back-button {
+      margin-top: 3rem;
+      padding: 1rem 1.5rem;
+    }
+    li:has(.back-button) {
+      padding-top: 1rem;
     }
   }
   @media (max-width: 430px) {
