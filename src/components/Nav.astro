@@ -43,7 +43,7 @@
       <li><a href="/conclusion">Conclusion</a></li>
       <li><a href="/notre-equipe">Notre équipe</a></li>
       <li><a href="/bibliographie">Bibliographie</a></li>
-      <li>
+      <li class="li-back-button">
         <a
           class="back-button"
           href="https://hosting.umons.ac.be/html/ethiqueia/2022-2023/"
@@ -199,7 +199,7 @@
   }
 
   button[aria-expanded="true"] :is(.top, .bottom) {
-    y: 45;
+    y: 45px;
   }
   button[aria-expanded="true"] .top {
     rotate: 45deg;
@@ -246,10 +246,9 @@
       display: block;
     }
     .back-button {
-      margin-top: 3rem;
       padding: 1rem 1.5rem;
     }
-    li:has(.back-button) {
+    .li-back-button {
       padding-top: 1rem;
     }
   }
