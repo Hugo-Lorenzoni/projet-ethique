@@ -1,6 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Button from "../components/Button.astro";
+import Graph1 from "/graph1.png";
+import Graph2 from "/graph2.png";
+import Graph3 from "/graph3.png";
+import Graph4 from "/graph4.png";
+import Graph5 from "/graph5.png";
 ---
 
 <Layout>
@@ -24,7 +29,7 @@ import Button from "../components/Button.astro";
         expliquer cela par notre entourage rapproché qui est principalement
         constitué d'étudiants Polytech.
       </p>
-      <img class="graph" src="/graph1.png" alt="graphique secteur d'activité" />
+      <img class="graph" src={Graph1} alt="graphique secteur d'activité" />
       <p>
         Quant à la connaissance des personnes que nous avons interrogées sur les
         domaines de l'IA et de l'art, on voit que des tendances se dessinent en
@@ -51,15 +56,15 @@ import Button from "../components/Button.astro";
       <div class="group-graph">
         <img
           class="graph"
-          src="/graph2.png"
+          src={Graph2}
           alt="sondage familiarité avec l'art"
         /><img
           class="graph"
-          src="/graph3.png"
+          src={Graph3}
           alt="sondage familiarité avec l'IA"
         /><img
           class="graph"
-          src="/graph4.png"
+          src={Graph4}
           alt="sondage familiarité avec l'usage de l'IA dans l'art"
         />
       </div>
@@ -126,7 +131,7 @@ import Button from "../components/Button.astro";
         sont divergents même si la tendance pointe vers l'idée que l'utilisation
         de l'IA dans l'art ne serait pas ou peu bénéfique à la société.
       </p>
-      <img class="graph" src="/graph5.png" alt="bénéfice de l'IA dans l'art" />
+      <img class="graph" src={Graph5} alt="bénéfice de l'IA dans l'art" />
       <p>
         Pour terminer, nous avons laissé aux répondants un espace d'expression
         dans lequel ils ont pu développer un avis ou une remarque sur le sujet.
@@ -158,7 +163,7 @@ import Button from "../components/Button.astro";
         </p>
       </div>
     </section>
-    <Button href="/experts" title="Vers le point de vue de notre expert" />
+    <Button href="experts" title="Vers le point de vue de notre expert" />
   </main>
 </Layout>
 

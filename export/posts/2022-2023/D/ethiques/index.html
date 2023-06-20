@@ -1,16 +1,69 @@
----
-import Layout from "../layouts/Layout.astro";
-import Button from "../components/Button.astro";
-import Aristote from "/aristote.png";
-import Beethoven from "/beethoven.png";
----
+<!DOCTYPE html>
+<html lang="fr-BE">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Rémy Lempire, Rodrigue Deghorain, Harrison Nguyen, Hugo Lorenzoni">
+    <meta name="description" content="Réflexion à propos de la place de l'IA dans l'art">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <title>L'IA dans l'art</title>
+  <link rel="stylesheet" href="/posts/2022-2023/D/_astro/bibliographie.58e14879.css" />
+<link rel="stylesheet" href="/posts/2022-2023/D/_astro/conclusion.d284c8ab.css" />
+<link rel="stylesheet" href="/posts/2022-2023/D/_astro/ethiques.86ff3bfa.css" /><script type="module">const n=document.querySelector("header").clientHeight;document.querySelector("main").style.paddingTop=n+"px";const t=document.querySelector("ul#primary-navigation"),e=document.querySelector("button#primary-navigation");window.addEventListener("click",i=>{const a=t.getAttribute("data-visible");a==="false"&&e.contains(i.target)?(t.setAttribute("data-visible","true"),e.setAttribute("aria-expanded","true")):a==="true"&&(e.contains(i.target)||!t.contains(i.target))&&(t.setAttribute("data-visible","false"),e.setAttribute("aria-expanded","false"))});
+</script></head>
+  <body>
+    <header class="astro-DMQPWCEC">
+  <nav class="astro-DMQPWCEC">
+    <a class="home astro-DMQPWCEC" href="/posts/2022-2023/D/">
+      <svg width="40px" height="20px" viewBox="0 0 20 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="astro-DMQPWCEC">
+        <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" class="astro-DMQPWCEC">
+          <g id="Rounded" transform="translate(-374.000000, -913.000000)" class="astro-DMQPWCEC">
+            <g id="AV" transform="translate(100.000000, 852.000000)" class="astro-DMQPWCEC">
+              <g id="-Round-/-AV-/-art_track" transform="translate(272.000000, 54.000000)" class="astro-DMQPWCEC">
+                <g class="astro-DMQPWCEC">
+                  <rect id="Rectangle-Copy-7" x="0" y="0" width="24" height="24" class="astro-DMQPWCEC"></rect>
+                  <path d="M21,13 L15,13 C14.45,13 14,12.55 14,12 C14,11.45 14.45,11 15,11 L21,11 C21.55,11 22,11.45 22,12 C22,12.55 21.55,13 21,13 Z M21,7 L15,7 C14.45,7 14,7.45 14,8 C14,8.55 14.45,9 15,9 L21,9 C21.55,9 22,8.55 22,8 C22,7.45 21.55,7 21,7 Z M15,17 L21,17 C21.55,17 22,16.55 22,16 C22,15.45 21.55,15 21,15 L15,15 C14.45,15 14,15.45 14,16 C14,16.55 14.45,17 15,17 Z M12,9 L12,15 C12,16.1 11.1,17 10,17 L4,17 C2.9,17 2,16.1 2,15 L2,9 C2,7.9 2.9,7 4,7 L10,7 C11.1,7 12,7.9 12,9 Z M9.9,14.2 L8.64,12.52 C8.44,12.26 8.05,12.25 7.84,12.51 L6.5,14.26 L5.65,13.23 C5.45,12.98 5.07,12.99 4.87,13.24 L4.13,14.19 C3.87,14.52 4.11,15 4.52,15 L9.5,15 C9.91,15 10.15,14.53 9.9,14.2 Z" fill="rgb(var(--blue-color))" class="astro-DMQPWCEC"></path>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+      L'IA dans l'art
+    </a>
+    <ul id="primary-navigation" class="primary-navigation astro-DMQPWCEC" data-visible="false">
+      <li class="astro-DMQPWCEC"><a href="/posts/2022-2023/D//ethiques" class="astro-DMQPWCEC">Éthiques</a></li>
+      <li class="astro-DMQPWCEC"><a href="/posts/2022-2023/D//enquetes" class="astro-DMQPWCEC">Enquête</a></li>
+      <li class="astro-DMQPWCEC">
+        <a href="/posts/2022-2023/D//experts" class="astro-DMQPWCEC">Avis de l'expert</a>
+      </li>
+      <li class="astro-DMQPWCEC"><a href="/posts/2022-2023/D//conclusion" class="astro-DMQPWCEC">Conclusion</a></li>
+      <li class="astro-DMQPWCEC">
+        <a href="/posts/2022-2023/D//notre-equipe" class="astro-DMQPWCEC">Notre équipe</a>
+      </li>
+      <li class="astro-DMQPWCEC">
+        <a href="/posts/2022-2023/D//bibliographie" class="astro-DMQPWCEC">Bibliographie</a>
+      </li>
+      <li class="li-back-button astro-DMQPWCEC">
+        <a class="back-button astro-DMQPWCEC" href="https://ethique.ig.umons.ac.be/posts/2022-2023/">Retour aux sujets</a>
+      </li>
+    </ul>
+    <button id="primary-navigation" aria-controls="primary-navigation" aria-expanded="false" class="astro-DMQPWCEC">
+      <svg fill="rgb(var(--blue-color))" class="hamburger astro-DMQPWCEC" viewBox="0 0 100 100" width="42">
+        <rect class="line top astro-DMQPWCEC" width="80" height="10" x="10" y="20" rx="5"></rect>
+        <rect class="line middle astro-DMQPWCEC" width="80" height="10" x="10" y="45" rx="5"></rect>
 
-<Layout>
-  <main>
-    <h1 class="title">Analyse selon trois éthiques</h1>
-    <section>
-      <h2>1. Ethique des vertus</h2>
-      <p>
+        <rect class="line bottom astro-DMQPWCEC" width="80" height="10" x="10" y="70" rx="5"></rect>
+      </svg>
+    </button>
+  </nav>
+</header>
+    
+  <main class="astro-WRXPLX5J">
+    <h1 class="title astro-WRXPLX5J">Analyse selon trois éthiques</h1>
+    <section class="astro-WRXPLX5J">
+      <h2 class="astro-WRXPLX5J">1. Ethique des vertus</h2>
+      <p class="astro-WRXPLX5J">
         Selon l'eudémonisme et la pensée d'Aristote, nos actions sont motivées
         par une quête du bonheur. Pour cela, nous nous devons de rester en
         adéquation avec nos valeurs pour ainsi devenir vertueux au travers de
@@ -19,16 +72,16 @@ import Beethoven from "/beethoven.png";
         essentiellement sur l'individu et l'interroge sur sa qualité morale à
         effectuer une action.
       </p>
-      <h3>Application de l'éthique des vertus.</h3>
-      <img class="right" src={Aristote} alt="Aristote" />
-      <p>
+      <h3 class="astro-WRXPLX5J">Application de l'éthique des vertus.</h3>
+      <img class="right astro-WRXPLX5J" src="/posts/2022-2023/D/aristote.png" alt="Aristote">
+      <p class="astro-WRXPLX5J">
         Pour appliquer cette éthique à notre sujet, nous devons d'abord définir
         le contexte et l'acteur de l'action. Prenons le cas d'un artiste musical
         qui est en recherche d'inspiration pour créer sa nouvelle œuvre. Avec
         l'avènement de l'Intelligence Artificielle dans le monde de l'art, il
         décide d'utiliser ces nouveaux outils.
       </p>
-      <p>
+      <p class="astro-WRXPLX5J">
         Dans cette situation, nous pouvons mettre en évidence la vertu de la
         créativité qui se trouve entre les vices de la banalité et de
         l'extravagance. En effet, les artistes ont une volonté de créer,
@@ -37,20 +90,20 @@ import Beethoven from "/beethoven.png";
         développement de la créativité chez un artiste.
       </p>
 
-      <ul>
-        <b> Nous pouvons distinguer 2 cas de figure :</b>
-        <li>
+      <ul class="astro-WRXPLX5J">
+        <b class="astro-WRXPLX5J"> Nous pouvons distinguer 2 cas de figure :</b>
+        <li class="astro-WRXPLX5J">
           - L'artiste soumet des extraits musicaux à l'Intelligence Artificielle
           qui génère par la suite des mélodies, voix ou autres que l'artiste
           peut modifier par après voire même abandonner s'il le souhaite.
         </li>
-        <li>
+        <li class="astro-WRXPLX5J">
           - L'artiste demande à une IA de générer une musique sans faire de
           soumissions en amont ni de traitement en aval.
         </li>
       </ul>
-      <p>
-        Dans la 1<sup>ère</sup> situation, nous pouvons considérer que l'utilisation
+      <p class="astro-WRXPLX5J">
+        Dans la 1<sup class="astro-WRXPLX5J">ère</sup> situation, nous pouvons considérer que l'utilisation
         de l'IA n'est en rien différent des autres outils numériques déjà existants
         pour concevoir de la musique et ne nuit donc pas à l'esprit novateur des
         artistes. Au contraire, nous pouvons voir l'IA comme une aide et une nouvelle
@@ -58,17 +111,17 @@ import Beethoven from "/beethoven.png";
         et d'autres artistes qui ont fait usage de l'Intelligence Artificielle pour
         la conception de l'album « Hello World » sorti en 2018.
       </p>
-      <p>
-        Dans la 2<sup>ème</sup> situation, nous pouvons remettre en question la créativité
+      <p class="astro-WRXPLX5J">
+        Dans la 2<sup class="astro-WRXPLX5J">ème</sup> situation, nous pouvons remettre en question la créativité
         de l'artiste. En effet, le principe même de cette vertu est le fait de rechercher
         la nouveauté pour apporter sa touche personnelle à son œuvre. Un artiste
         qui n'apporte rien de particulier à son œuvre ne peut donc pas être considérer
         comme créatif.
       </p>
     </section>
-    <section>
-      <h2>2. Ethique des devoirs</h2>
-      <p>
+    <section class="astro-WRXPLX5J">
+      <h2 class="astro-WRXPLX5J">2. Ethique des devoirs</h2>
+      <p class="astro-WRXPLX5J">
         Selon Kant, un être moral est un être qui respecte des règles et des
         obligations. Le déontologisme ou l'éthique des devoirs permet alors de
         déterminer si une action en elle-même est bonne ou mauvaise en vérifiant
@@ -76,9 +129,9 @@ import Beethoven from "/beethoven.png";
         individu doit donc respecter un impératif catégorique qui le pousse à
         agir de manière juste et responsable envers les autres et la société.
       </p>
-      <h3>Application de l'éthique des devoirs</h3>
-      <img class="left" src={Beethoven} alt="Beethoven" />
-      <p>
+      <h3 class="astro-WRXPLX5J">Application de l'éthique des devoirs</h3>
+      <img class="left astro-WRXPLX5J" src="/posts/2022-2023/D/beethoven.png" alt="Beethoven">
+      <p class="astro-WRXPLX5J">
         Pour appliquer cette éthique à l'utilisation de l'IA dans l'art, nous
         pouvons nous pencher sur la législation sur le plagiat. En effet, copier
         entièrement une œuvre ou même partiellement sans revendiquer l'origine
@@ -88,7 +141,7 @@ import Beethoven from "/beethoven.png";
         pas donné leur accord remarquent une ressemblance très frappante entre
         les œuvres générées par une IA et leurs propres œuvres.
       </p>
-      <p>
+      <p class="astro-WRXPLX5J">
         Nous pourrions nous demander si nous pouvons qualifier cette action de
         plagiat ou d'inspiration, comme ce pourrait être le cas pour d'autres
         artistes. Toutefois, il est difficilement concevable qu'une IA puisse
@@ -98,12 +151,12 @@ import Beethoven from "/beethoven.png";
         qu'il n'y ait pas une phase d'internalisation profonde mais un simple
         apprentissage rationnel, systématique et mathématique.
       </p>
-      <p>
+      <p class="astro-WRXPLX5J">
         L'utilisation d'une IA entrainée avec des œuvres d'autres artistes est
         donc problématique mais qu'en est-il alors d'une IA entrainée
         entièrement avec des œuvres libres de droits ?
       </p>
-      <p>
+      <p class="astro-WRXPLX5J">
         Pour évaluer cette action, nous pouvons définir la maxime suivante à
         partir des réflexions précédentes : « L'art doit être le résultat d'une
         conception personnelle et d'un sentiment personnel ». Respectant les
@@ -116,9 +169,9 @@ import Beethoven from "/beethoven.png";
         générée entièrement par une IA.
       </p>
     </section>
-    <section>
-      <h2>3. Ethique des conséquences</h2>
-      <p>
+    <section class="astro-WRXPLX5J">
+      <h2 class="astro-WRXPLX5J">3. Ethique des conséquences</h2>
+      <p class="astro-WRXPLX5J">
         L'éthique des conséquences est une éthique qui juge la moralité d'une
         action de par ses conséquences. Si les conséquences d'un projet sont
         bénéfiques/positives, tout le projet sera jugé comme étant
@@ -127,8 +180,8 @@ import Beethoven from "/beethoven.png";
         nuisibles/négatifs. C'est l'éthique de l'adage “La fin justifie les
         moyens”.
       </p>
-      <h3>Application de l'éthique des conséquences :</h3>
-      <p>
+      <h3 class="astro-WRXPLX5J">Application de l'éthique des conséquences :</h3>
+      <p class="astro-WRXPLX5J">
         Le point de vue de l'éthique des conséquences est très intéressant à
         étudier pour notre question car si l'on regarde uniquement la
         conséquence esthétique ou utilitaire de la création d'une œuvre par une
@@ -136,7 +189,7 @@ import Beethoven from "/beethoven.png";
         importe vraiment ?
       </p>
 
-      <p>
+      <p class="astro-WRXPLX5J">
         Si on trouve qu'un œuvre est belle sans savoir comment elle a été
         réalisée, que ce soit par un humain, par une IA ou par les deux
         ensemble, cette œuvre reste belle. Ce qui va nous intéresser, c'est ce
@@ -144,52 +197,58 @@ import Beethoven from "/beethoven.png";
         œuvre pour arriver à celle-ci. La qualité artistique d'une œuvre va
         dépendre au final du résultat pur et non du concepteur de cette œuvre.
       </p>
-      <p>
+      <p class="astro-WRXPLX5J">
         Maintenant, on peut se questionner sur l'utilité d'une œuvre générée par
         l'intelligence artificielle. Est-ce qu'une telle œuvre est bénéfique et
         souhaitable ? Ou alors a-t-elle des conséquences nuisibles pour la
         société ?
       </p>
-      <p>
+      <p class="astro-WRXPLX5J">
         Une œuvre générée par l'IA peut apporter du divertissement, un gain de
         temps, de coût,… L'œuvre peut en fait apporter exactement les mêmes
         bénéfices qu'une œuvre classique créée par un humain si on fait
         abstraction de l'auteur et, éventuellement, du sens qui se trouve
         derrière l'œuvre.
       </p>
-      <p>
+      <p class="astro-WRXPLX5J">
         Ainsi, on peut se demander si l'arrivée sur le marché d'œuvres créées
         par des IA a un sens et peut faire évoluer la société ou si cela ne va
         pas plutôt nuire aux artistes, enlever son charme et son intérêt à
         l'art, noyer le marché, ...
       </p>
-      <p>
+      <p class="astro-WRXPLX5J">
         On voit maintenant qu'il peut y avoir des conséquences positives et
         négatives à l'arrivée des œuvres générées par IA sur le marché de l'art,
         c'est donc à l'appréciation de chacun de trouver de quel côté penche la
         balance.
       </p>
     </section>
-    <Button href="enquetes" title="Vers notre enquête" />
+    <section class="astro-VNZLVQNM">
+  <a href="/posts/2022-2023/D/enquetes" class="astro-VNZLVQNM">
+    Vers notre enquête
+    &gt;&gt;
+  </a>
+</section>
   </main>
 
-  <style>
-    img {
-      width: min(50%, 20rem);
+  
 
-      border-radius: 1rem;
-      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-      border: 2px solid rgb(var(--accent));
-    }
-    .right {
-      float: right;
-      margin-left: 2rem;
-      margin-bottom: 1rem;
-    }
-    .left {
-      float: left;
-      margin-right: 2rem;
-      margin-bottom: 1rem;
-    }
-  </style>
-</Layout>
+    <footer class="astro-SZ7XMLTE">
+  <div class="wrapper astro-SZ7XMLTE">
+    <div class="astro-SZ7XMLTE">
+      Réalisé dans le cadre du cours de Questions d'éthique en IA et en NTIC de
+      la Faculté Polytechnique de Mons.
+    </div>
+    <div class="astro-SZ7XMLTE">
+      Par Rodrigue Deghorain, Rémy Lempire, Harrison Nguyen, Hugo Lorenzoni.
+    </div>
+    <div class="astro-SZ7XMLTE">© 2023 Copyright</div>
+    <div class="logo astro-SZ7XMLTE">
+      <img src="/posts/2022-2023/D//logo-polytech.png" alt="logo polytech" class="astro-SZ7XMLTE">
+      <img src="/posts/2022-2023/D//logo-UMONS.png" alt="logo UMONS" class="astro-SZ7XMLTE">
+    </div>
+  </div>
+</footer>
+  
+
+</body></html>
